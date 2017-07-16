@@ -39,7 +39,7 @@ public class BlockingArrayBlockingQueueTest {
 		try {
 			this.threadPoolExecutor.invokeAll(tasks);
 		} catch (InterruptedException e) {
-			e.printStackTrace();
+			LOGGER.error("Error occurred while processing tasks", e);
 			Assert.assertTrue("Exception not expected here", false);
 		}
 	}
@@ -60,7 +60,7 @@ public class BlockingArrayBlockingQueueTest {
 		try {
 			this.threadPoolExecutor.invokeAll(tasks);
 		} catch (InterruptedException e) {
-			e.printStackTrace();
+			LOGGER.error("Error occurred while processing tasks", e);
 			Assert.assertTrue("Exception not expected here", false);
 		}
 	}
@@ -82,7 +82,7 @@ public class BlockingArrayBlockingQueueTest {
 		try {
 			futureList = this.threadPoolExecutor.invokeAll(tasks);
 		} catch (InterruptedException e) {
-			e.printStackTrace();
+			LOGGER.error("Error occurred while processing tasks", e);
 			Assert.assertTrue("Exception not expected here", false);
 		}
 		Assert.assertSame("Should be same", 0, threadPoolExecutor.getActiveCount());
