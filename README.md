@@ -1,6 +1,5 @@
 # Collection Utils
-
-[TOC]
+[![Build Status](https://api.travis-ci.org/baba-shinde/collection-utils.svg?branch=master)](https://travis-ci.org/baba-shinde/collection-utils)
 
 ## BlockingArrayBlockingQueue
 This is an extension of [ArrayBlokingQueue](https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ArrayBlockingQueue.html). Specially to be used along with [Executor Service](https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ExecutorService.html) implementation.
